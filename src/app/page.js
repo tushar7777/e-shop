@@ -14,8 +14,11 @@ export default function Home() {
       <br />
       <Link href="/about">About Page</Link>
       <br />
+      <Link href="/about/about-us">About Us Page</Link>
+      <br />
       <button onClick={() => navigate("/login")}>Go to Login</button>
       <button onClick={() => navigate("/about")}>Go to About</button>
+      <button onClick={() => navigate("/about/about-us")}>Go to About Us</button>
     </main>
   )
 }
