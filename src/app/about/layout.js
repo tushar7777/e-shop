@@ -1,21 +1,21 @@
 import Link from "next/link"
-import './login.css'
+import './about.css'
 
 export default function Layout({ children }) {
     return (
         <div>
-            <ul className="menu-login">
+            <ul className="menu-about">
                 <li>
-                    <h4>Login Menu</h4>
+                    <h4>About Menu</h4>
                 </li>
                 <li>
-                    <Link href="/login">Login Main</Link>
+                    <Link href="/about">About</Link>
                 </li>
                 <li>
-                    <Link href="/login/login-teacher">Login Teacher</Link>
+                    <Link href="/about/about-us">About us</Link>
                 </li>
                 <li>
-                    <Link href="/login/login-student">Login Student</Link>
+                    <Link href="/about/team">Team</Link>
                 </li>
             </ul>
             {children}
