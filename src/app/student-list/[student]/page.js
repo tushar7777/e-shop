@@ -1,7 +1,7 @@
 "use client"
 
 const student = ({ params }) => {
-    console.log(params)
+    // console.log(params)
     return (
         <>
             <h1>Student Details</h1>
