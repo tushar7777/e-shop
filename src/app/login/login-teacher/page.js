@@ -6,7 +6,7 @@ export default function LoginTeacher() {
     const router = useRouter()
     return (
         <div>
-            <h1>Login Teacher Page</h1>
+            <h1 className="heading">Login Teacher Page</h1>
             <Link href="/">Homepage</Link>
             <br />
             <button onClick={() => router.back()}> {"<"} Go Back </button>
