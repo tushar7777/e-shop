@@ -9,7 +9,7 @@ export default function Product() {
         async function fetchProductApi() {
             let data = await fetch("https://dummyjson.com/products");
             data = await data.json()
-            console.log(data.products)
+            // console.log(data.products)
             setProduct(data.products)
         }
         fetchProductApi()

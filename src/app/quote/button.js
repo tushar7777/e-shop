@@ -1,12 +1,12 @@
 "use client"
 
-export default function Button({ author }) {
+export default function Button({ className,author }) {
     const btnClick = (name) => {
         alert(name)
     }
     return (
         <>
-            <button onClick={() => btnClick(author)}>Author Name</button>
+            <button className={className} onClick={() => btnClick(author)}>Author Name</button>
         </>
     )
 }

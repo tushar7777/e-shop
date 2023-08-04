@@ -1,0 +1,115 @@
+.main {
+    padding: 0 20px;
+    position: relative;
+}
+
+.heading {
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.textContainer {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.textBlock {
+    font-size: 30px;
+    float: left;
+    width: 90%;
+    padding-left: 16px;
+}
+
+.text {
+    padding: 0 10px;
+}
+
+.textCount {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    color: #686868;
+}
+
+.container {
+    margin: 20px 0 0;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.divider {
+    border: 1px solid #f4f4f4;
+    margin: 0;
+}
+
+.divider:last-child {
+    /* border: none; */
+}
+
+.listNumber {
+    font-weight: 600;
+    float: left;
+    width: 3%;
+    margin-top: 14px;
+}
+
+.button {
+    border: none;
+    font-size: 15px;
+    background: inherit;
+    color: #6f6f6f;
+    cursor: pointer;
+}
+
+.dividerShort {   
+    border: 4px solid 	#F5F5F5;
+    width: 85px;
+    border-radius: 5px;
+    padding-right: 0px;
+    float: left;
+    margin-top: 22px;
+    margin-left: 5px;
+}
+
+
+
+.buttonBlock{
+    float: left;
+    width: 100%;
+
+}
+
+.horizontalRule {
+    border-style: double;
+}
+
+.verticalDivider {
+    border: 1px solid red;
+    position: absolute;
+    height: 100vh;
+    left: 29px;
+    border-bottom: none;
+    border-top: 0;
+}
+
+.verticalDividerSecond {
+    border: 1px solid red;
+    position: absolute;
+    height: 100vh;
+    left: 32px;
+    border-bottom: none;
+    border-top: 0;
+}
+
+.quoteSection {
+    margin-top: 20px;
+}
+
+.textBlockQuotes {
+    float: left;
+    width: 100%;
+}
