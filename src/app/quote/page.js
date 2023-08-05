@@ -5,6 +5,13 @@ import globalStyle from '@/app/global/style.module.css'
 import NextImg from '../../../public/next.svg'
 import Image from "next/image"
 
+export function generateMetadata() {
+    return {
+        title: "Quotes | Life Lesson",
+        description: "Quotes from Greatest Philospher"
+    }
+}
+
 const roboto = Dancing_Script({
     weight: '400',
     subsets: ['latin'],
@@ -37,8 +44,8 @@ export default async function Quote() {
                         // width={100}
                         // height={60}
                         alt="React JS"
-                        // layout="fill"
-                        // style={{ objectFit: 'cover', "marginTop": "5px", "marginLeft": "5px" }}
+                    // layout="fill"
+                    // style={{ objectFit: 'cover', "marginTop": "5px", "marginLeft": "5px" }}
                     />
                 </div>
 
