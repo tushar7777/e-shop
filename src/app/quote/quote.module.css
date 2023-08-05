@@ -1,13 +1,24 @@
 .main {
     padding: 0 20px;
     position: relative;
+    overflow-y: hidden;
+}
+
+.headSection {
+    float: left;
+    width: 100%;
+    position: relative;
 }
 
 .heading {
+    float: left;
+    width: 80%;
     font-family: monospace;
     font-size: 50px;
     text-align: center;
     text-decoration: underline;
+    margin: 10px;
+    text-decoration-color: red;
 }
 
 .textContainer {
@@ -65,8 +76,8 @@
     cursor: pointer;
 }
 
-.dividerShort {   
-    border: 4px solid 	#F5F5F5;
+.dividerShort {
+    border: 4px solid #F5F5F5;
     width: 85px;
     border-radius: 5px;
     padding-right: 0px;
@@ -77,7 +88,7 @@
 
 
 
-.buttonBlock{
+.buttonBlock {
     float: left;
     width: 100%;
 
@@ -112,4 +123,23 @@
 .textBlockQuotes {
     float: left;
     width: 100%;
+}
+
+.image {
+    float: left;
+    width: 10%;
+}
+
+.imageReact {
+    width: 100px;
+    object-fit: "none";
+}
+
+.containerImageReact {
+    position: relative;
+    width: 133px;
+    height: 62px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 7px;
 }

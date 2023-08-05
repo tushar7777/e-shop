@@ -2,6 +2,8 @@ import Button from "./button"
 import quoteCss from './quote.module.css'
 import { Dancing_Script } from 'next/font/google'
 import globalStyle from '@/app/global/style.module.css'
+import NextImg from '../../../public/next.svg'
+import Image from "next/image"
 
 const roboto = Dancing_Script({
     weight: '400',
@@ -17,21 +19,45 @@ async function fetchQuoteAPI() {
 
 export default async function Quote() {
     let quotes = await fetchQuoteAPI()
-    // console.log(quotes)
+    console.log(NextImg)
     return (
         <div className={`${quoteCss.main}`}>
-            <h1 className={quoteCss.heading}>Quotes</h1>
+            <div className={quoteCss.headSection}>
+                <Image
+                    src={NextImg}
+                    className={quoteCss.image}
+                    alt="NEXT Icon image"
+                />
+                <div className={quoteCss.containerImageReact}>
+
+                    <Image
+                        src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.png"
+                        className={`${quoteCss.image} ${quoteCss.imageReact}`}
+                        fill
+                        // width={100}
+                        // height={60}
+                        alt="React JS"
+                        // layout="fill"
+                        // style={{ objectFit: 'cover', "marginTop": "5px", "marginLeft": "5px" }}
+                    />
+                </div>
+
+                <h1 className={quoteCss.heading}>
+                    Quotes
+                </h1>
+            </div>
             <h3 className={globalStyle.sub_heading}>Moral Life</h3>
             <div className={quoteCss.textCount}>
                 <b>Total:</b> {quotes.length}
             </div>
+
             <div className={quoteCss.horizontalRule}></div>
             {/* <div classsName={quoteCss.verticalDivider}></div> */}
             <div className={quoteCss.quoteSection}>
                 {
                     quotes.map((qoute, i) => (
                         <>
-                            <div className={quoteCss.container}>
+                            <div key={i} className={quoteCss.container}>
                                 <div className={quoteCss.textContainer}>
                                     <div className={quoteCss.listNumber}>
                                         {i + 1}.
