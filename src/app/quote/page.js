@@ -4,6 +4,7 @@ import { Dancing_Script } from 'next/font/google'
 import globalStyle from '@/app/global/style.module.css'
 import NextImg from '../../../public/next.svg'
 import Image from "next/image"
+import Script from "next/script"
 
 export function generateMetadata() {
     return {
@@ -26,9 +27,12 @@ async function fetchQuoteAPI() {
 
 export default async function Quote() {
     let quotes = await fetchQuoteAPI()
-    console.log(NextImg)
+    // console.log(NextImg)
     return (
         <div className={`${quoteCss.main}`}>
+            <Script
+                src="/location.js"
+            />
             <div className={quoteCss.headSection}>
                 <Image
                     src={NextImg}
