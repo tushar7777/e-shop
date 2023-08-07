@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    float: left;
+}
+
+.heading {
+    color: #000eb6;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #efefef;
+    width: 30%;
+    float: left;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.card_title {
+    color: #000080;
+    margin-top: 0;
+}
