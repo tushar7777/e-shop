@@ -1,0 +1,21 @@
+.table-cart {
+    border: 2px solid #a4a4a4;
+    border-radius: 3px;
+}
+
+.table-cart thead{
+    background: blue;
+    color: white;
+}
+
+.table-cart tfoot {
+    background: #cacaca;
+}
+
+.table-cart td, .table-cart th {
+    padding: 10px 20px;
+}
+
+.cart-item-number {
+    direction: rtl;
+}
