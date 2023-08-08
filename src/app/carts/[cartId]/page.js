@@ -87,16 +87,14 @@ export default async function CartDetails(props) {
 }
 
 export async function generateStaticParams() {
+
     let carts = getCarts()
     carts = await carts
     carts = carts.carts
-    // console.log("carts======>", carts[0]["id"] )
-    // const carty = carts.map((item) => {
-    //     return item.id
-    // })
-    // // console.log(carty)
-    // return carty
-    return carts.map((item) => {
-        cartId: item.id
+    const pathMAP = carts.map((item) => {
+        return { cartId: `${item.id}` }
     })
+
+    // console.log("========>",pathMAP)
+    return pathMAP
 }
