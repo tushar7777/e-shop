@@ -1,10 +1,7 @@
 import { NextResponse } from "next/server";
+import { users } from "@/utils/db";
 
 export function GET(request) {
-    const data = {
-        name: "Peter",
-        age: 22,
-        email: "peter@mail.com"
-    }
+    const data = users
     return NextResponse.json(data, { status: 200 })
 }

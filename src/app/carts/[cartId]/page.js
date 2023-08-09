@@ -13,14 +13,15 @@ export default async function CartDetails(props) {
             return prev + curr.price
         }, 0)
         : "-"
-    const totalDiscountPercentage = cartDetail && cartDetail.products
+    let totalDiscountPercentage = cartDetail && cartDetail.products
         ? cartDetail.products.reduce(function (prev, curr) {
-            const total = Math.round((prev + curr.discountPercentage) * 100) / 100
+            const total = prev + curr.discountPercentage
             return total
         }, 0)
         : "-"
-
+    totalDiscountPercentage = Math.round(totalDiscountPercentage * 100) / 100
     const userId = cartDetail?.userId
+    
     return (
         <>
             <h1>Cart Details</h1>
